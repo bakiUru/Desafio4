@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Ingreso De Producto</title>
+</head>
+<body>
+    <div class="row ">
+        <div class="col s12 m4 l8"> 
+            <h5 class="left-align">Ingrese Nuevo Producto</h5>
+            <br>
+            <br>
+            <form class="col s6 " id="form_product">
+                <div class="row">
+                    <div class="input-field col s6">
+                    <input id="title" type="text" class="validate">
+                    <label class="active" for="name">Producto</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                    <input  id="price" type="text" class="validate">
+                    <label class="active" for="price">Precio</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                    <input id="category" type="text" class="validate">
+                    <label class="active" for="category">Categoria</label>
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <label class="active" for="description">Descripcion</label>
+                        <input id="textarea" class="materialize-textarea" data-length="30"></input>
+                        
+                        </div>
+                    </div>
+             
+    
+                                
+                    <button class="btn waves-effect waves-light center-align" id="btn_send" type="submit" name="action">Enviar</button>
+                    
+                            
+                    
+                 
+                   
+            </form>
+           
+        </div>
+    </div>
+    <script src="productSend.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
